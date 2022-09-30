@@ -54,9 +54,19 @@ public class UserController {
 		}
 		
 		user.get().setName(userDetails.getName());
-		user.get().setSurname(userDetails.getSurname());
-		user.get().setEmail(userDetails.getEmail());
+		user.get().setLast_name_p(userDetails.getLast_name_p());
+		user.get().setLast_name_m(userDetails.getLast_name_m());
+		user.get().setTel(userDetails.getTel());
+		user.get().setDomicilio(userDetails.getDomicilio());
+		user.get().setSanctions(userDetails.getSanctions());
+		user.get().setSanc_money(userDetails.getSanc_money());
+		
+		
+		
+		/*
+		user.get().setEmail(userDetails.getEmail());		
 		user.get().setEnabled(userDetails.getEnabled());
+		*/
 		
 		return ResponseEntity.status(HttpStatus.CREATED).body(userService.save(user.get()));
 	}
