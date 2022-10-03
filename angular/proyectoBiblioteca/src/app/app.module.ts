@@ -12,6 +12,9 @@ import { LoginComponent } from './Pages/login/login.component';
 import { RegistroComponent } from './Pages/registro/registro.component';
 import { CatalogoComponent } from './Pages/catalogo/catalogo.component';
 import { ConeccionComponent } from './Pages/coneccion/coneccion.component';
+import { InicioComponent } from './Pages/inicio/inicio.component';
+import { AgregarComponent } from './Pages/agregar/agregar.component';
+import { EditarComponent } from './Pages/editar/editar.component';
 
 @NgModule({
   declarations: [		
@@ -23,8 +26,11 @@ import { ConeccionComponent } from './Pages/coneccion/coneccion.component';
     RegistroComponent,
     CatalogoComponent,
     ConeccionComponent,
-    LayoutComponent,
-    PagesComponent
+    LayoutComponent, 
+    PagesComponent,
+    InicioComponent,
+    AgregarComponent,
+    EditarComponent
    ],
   imports: [
     BrowserModule
