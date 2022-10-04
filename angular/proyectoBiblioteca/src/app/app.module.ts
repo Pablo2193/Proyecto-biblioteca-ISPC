@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
-
+import { AppRoutingModule } from './app-routing.module';
 import { LayoutComponent } from './Layout/Layout.component';
 import { NavComponent } from './Layout/nav/nav.component';
 import { FooterComponent } from './Layout/footer/footer.component';
@@ -12,9 +11,11 @@ import { LoginComponent } from './Pages/login/login.component';
 import { RegistroComponent } from './Pages/registro/registro.component';
 import { CatalogoComponent } from './Pages/catalogo/catalogo.component';
 import { ConeccionComponent } from './Pages/coneccion/coneccion.component';
+
 import { InicioComponent } from './Pages/inicio/inicio.component';
 import { AgregarComponent } from './Pages/agregar/agregar.component';
 import { EditarComponent } from './Pages/editar/editar.component';
+
 
 @NgModule({
   declarations: [		
@@ -33,7 +34,9 @@ import { EditarComponent } from './Pages/editar/editar.component';
     EditarComponent
    ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
