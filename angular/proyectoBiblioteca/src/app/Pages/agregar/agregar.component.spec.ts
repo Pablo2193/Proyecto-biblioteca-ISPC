@@ -1,23 +1,19 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AgregarComponent } from './agregar.component';
+/* tslint:disable:no-unused-variable */
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
+import { DebugElement } from '@angular/core';
 
-describe('AgregarComponent', () => {
-  let component: AgregarComponent;
-  let fixture: ComponentFixture<AgregarComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
       declarations: [ AgregarComponent ]
     })
     .compileComponents();
+  }));
 
-    fixture = TestBed.createComponent(AgregarComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+  beforeEach(() => {
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+
