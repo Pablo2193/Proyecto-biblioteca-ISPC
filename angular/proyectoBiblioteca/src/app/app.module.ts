@@ -11,7 +11,12 @@ import { LoginComponent } from './Pages/login/login.component';
 import { RegistroComponent } from './Pages/registro/registro.component';
 import { CatalogoComponent } from './Pages/catalogo/catalogo.component';
 import { ConeccionComponent } from './Pages/coneccion/coneccion.component';
-import { FormsModule } from '@angular/forms';
+
+import { InicioComponent } from './Pages/inicio/inicio.component';
+import { AgregarComponent } from './Pages/agregar/agregar.component';
+import { EditarComponent } from './Pages/editar/editar.component';
+
+
 @NgModule({
   declarations: [		
     AppComponent,
@@ -22,13 +27,16 @@ import { FormsModule } from '@angular/forms';
     RegistroComponent,
     CatalogoComponent,
     ConeccionComponent,
-    LayoutComponent,
-    PagesComponent
+    LayoutComponent, 
+    PagesComponent,
+    InicioComponent,
+    AgregarComponent,
+    EditarComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

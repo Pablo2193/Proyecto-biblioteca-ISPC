@@ -9,7 +9,9 @@ export class AgregarComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+
+  ngOnInit(): void {
+
   }
 
 }
