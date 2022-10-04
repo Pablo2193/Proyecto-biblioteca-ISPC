@@ -1,4 +1,4 @@
-package com.mati.app.service;
+ package com.mati.app.service;
 
 import java.util.Optional;
 
@@ -8,47 +8,46 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.mati.app.entity.User;
-import com.mati.app.repository.UserRepository;
+import com.mati.app.entity.Book;
+import com.mati.app.repository.BookRepository;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class BookServiceImpl implements BookService {
 
 	@Autowired
-	private UserRepository userRepository;
+	private BookRepository bookRepository;
 	
 	
 	@Override
 	@Transactional(readOnly = true)
-	public Iterable<User> findAll() {
+	public Iterable<Book> findAll() {
 		
-		return userRepository.findAll();
+		return bookRepository.findAll();
 	}
 
 	@Override
 	@Transactional(readOnly = true)
-	public Page<User> findAll(Pageable pageable) {
+	public Page<Book> findAll(Pageable pageable) {
 		
-		return userRepository.findAll(pageable);
+		return bookRepository.findAll(pageable);
 	}
 
 	@Override
 	@Transactional(readOnly = true)
-	public Optional<User> findById(Long id) {		
-		return userRepository.findById(id);
+	public Optional<Book> findById(Long id) {		
+		return bookRepository.findById(id);
 	}
 
 	@Override
 	@Transactional
-	public User save(User user) {
-		return userRepository.save(user);
+	public Book save(Book book) {
+		return bookRepository.save(book);
 	}
 
 	@Override
 	@Transactional
 	public void deleteById(Long id) {
-		userRepository.deleteById(id);
+		bookRepository.deleteById(id);
 		
 	}
-
 }

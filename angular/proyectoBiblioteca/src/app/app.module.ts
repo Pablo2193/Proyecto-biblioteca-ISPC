@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import {HttpClientModule} from '@angular/common/http'
+
 import { AppComponent } from './app.component';
 
 import { LayoutComponent } from './Layout/Layout.component';
@@ -15,6 +17,8 @@ import { ConeccionComponent } from './Pages/coneccion/coneccion.component';
 import { InicioComponent } from './Pages/inicio/inicio.component';
 import { AgregarComponent } from './Pages/agregar/agregar.component';
 import { EditarComponent } from './Pages/editar/editar.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [		
@@ -30,10 +34,13 @@ import { EditarComponent } from './Pages/editar/editar.component';
     PagesComponent,
     InicioComponent,
     AgregarComponent,
-    EditarComponent
+    EditarComponent,
+    
    ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
