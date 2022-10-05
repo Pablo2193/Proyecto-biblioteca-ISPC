@@ -32,21 +32,18 @@ import { CookieService } from 'ngx-cookie-service';
     RegistroComponent,
     LayoutComponent,
     PagesComponent,
+    CatalogoComponent,
+    ConeccionComponent, 
+    InicioComponent,
+    AgregarComponent,
+    EditarComponent
    ],
   imports: [
     BrowserModule,
     RouterModule,
     AppRoutingModule,
     HttpClientModule, 
-    FormsModule,
-
-    CatalogoComponent,
-    ConeccionComponent,
-    LayoutComponent, 
-    PagesComponent,
-    InicioComponent,
-    AgregarComponent,
-    EditarComponent
+    FormsModule
    ],
   
   providers: [CookieService],

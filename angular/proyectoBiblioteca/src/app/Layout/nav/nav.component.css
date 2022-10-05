@@ -4,19 +4,14 @@
     margin:0;
     padding:0;
    }
-   body{
-    font:15px/1.3 'Open Sans', sans-serif;
-    background-image: url(../../../assets/bliblio1.jpg);
-    
-    text-align:center;
-   }
    a, a:visited {
     outline:none;
     color:white;
    }
    
    a:hover{
-    text-decoration:none;
+    box-shadow: 7px 13px 37px #000;
+    transform: translateY(-15px);
    }
    
    section, footer, header, aside, nav{
@@ -26,10 +21,10 @@
    nav{
     display:inline-block;
     margin:60px auto 45px;
-    background-image: url(../../../assets/pergamino1.jpg);
+    background-color: #a19523;
     background-size:100% ;
     
-    box-shadow:1px 1px 1px rgb(15, 6, 6);
+    box-shadow: 3px 3px 8px rgb(15, 6, 6);
     border-radius:2px;
    }
    nav a{
@@ -62,3 +57,4 @@
    nav.contact .contact{
     background-color:#8e5e3fb1;
    }
+ 
