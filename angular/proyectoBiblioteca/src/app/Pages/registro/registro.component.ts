@@ -1,3 +1,4 @@
+
 // register.component.ts
 
 import { Component } from "@angular/core";
@@ -18,4 +19,5 @@ export class RegistroComponent {
     console.log(this.email);
     console.log(this.password);
   }
+
 }
