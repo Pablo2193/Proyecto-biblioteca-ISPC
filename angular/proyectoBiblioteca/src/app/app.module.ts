@@ -19,6 +19,8 @@ import { InicioComponent } from './Pages/inicio/inicio.component';
 import { AgregarComponent } from './Pages/agregar/agregar.component';
 import { EditarComponent } from './Pages/editar/editar.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [		
@@ -34,7 +36,9 @@ import { EditarComponent } from './Pages/editar/editar.component';
   imports: [
     BrowserModule,
     RouterModule,
-    FormsModule
+    AppRoutingModule,
+    HttpClientModule, 
+    FormsModule,
 
     CatalogoComponent,
     ConeccionComponent,
@@ -44,12 +48,8 @@ import { EditarComponent } from './Pages/editar/editar.component';
     AgregarComponent,
     EditarComponent
    ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    
-  ],
-  providers: [],
+  
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
