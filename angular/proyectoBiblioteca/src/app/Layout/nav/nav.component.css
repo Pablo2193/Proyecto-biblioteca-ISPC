@@ -21,7 +21,7 @@
    nav{
     display:inline-block;
     margin:60px auto 45px;
-    background-color: #a19523;
+    background-color: #e2cf24;
     background-size:100% ;
     
     box-shadow: 3px 3px 8px rgb(15, 6, 6);
@@ -55,6 +55,6 @@
    nav.projects .projects,
    nav.services .services,
    nav.contact .contact{
-    background-color:#8e5e3fb1;
+    background-color:#e2cf24;
    }
  

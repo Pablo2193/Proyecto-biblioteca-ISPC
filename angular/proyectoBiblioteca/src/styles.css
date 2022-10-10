@@ -1,6 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    background-image: url(assets/madera2.jpg);
-    background-position: 0%;
-    background-size: 100%;
+    background-image: url(assets/pilaLibros.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #e2cf24;
+    
 }
+.footer{
+    text-align: center;
+    position: bottom;
+    width: 100%;  
+    margin-top: 50px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+

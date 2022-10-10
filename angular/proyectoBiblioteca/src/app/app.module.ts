@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LayoutComponent } from './Layout/Layout.component';
 import { NavComponent } from './Layout/nav/nav.component';
-import { FooterComponent } from './Layout/footer/footer.component';
 import { HeaderComponent } from './Layout/header/header.component';
 import { PagesComponent } from './Pages/Pages.component';
 import { LoginComponent } from './Pages/login/login.component';
@@ -27,7 +26,6 @@ import { CookieService } from 'ngx-cookie-service';
     AppComponent,
     NavComponent,
     HeaderComponent,
-    FooterComponent,
     LoginComponent,
     RegistroComponent,
     LayoutComponent,
@@ -43,7 +41,7 @@ import { CookieService } from 'ngx-cookie-service';
     RouterModule,
     AppRoutingModule,
     HttpClientModule, 
-    FormsModule
+    FormsModule, 
    ],
   
   providers: [CookieService],
