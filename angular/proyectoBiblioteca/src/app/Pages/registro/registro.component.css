@@ -16,11 +16,11 @@ h1 {
   margin: 0px auto;
   background: rgba(255, 255, 255, 0.15);
   padding: 2rem 3rem;
-  margin: auto;
   border-radius: 2.5rem;
-  background-color: rgba(136, 82, 54, 0.67);
+  background-color: #e2cf24(136, 82, 54, 0.67);
+  box-shadow: 7px 13px 37px #000;
   color: black;
-  margin-top: 10rem;
+  margin-top: 1rem;
 }
 .custom-form input {
   display: block;
@@ -39,7 +39,7 @@ h1 {
   font-size: 0.875rem;
   color: #ffffff;
   font-weight: bold;
-  background-color: #a19523;
+  background-color: #e2cf24;
   width: 100%;
   display: block;
   padding: 0.875rem 1rem;

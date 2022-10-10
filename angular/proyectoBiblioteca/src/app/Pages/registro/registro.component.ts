@@ -10,10 +10,10 @@ import { Router } from '@angular/router';
   styleUrls: ["./registro.component.css"]
 })
 export class RegistroComponent {
-  email!: string;
-  password!: string;
+  email: string;
+  password: string;
   confirmPassword!: string;
-  passwordError!: boolean;
+  passwordError: boolean;
 
   constructor(public userService: UsersService, public router: Router) {}
 
